@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vw;
+  margin: 0px;
+  padding: 0px;
+  background: rgb(2, 0, 36);
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(281deg 100% 21%) 8%,
+    hsl(304deg 100% 23%) 17%,
+    hsl(319deg 100% 30%) 25%,
+    hsl(329deg 100% 36%) 33%,
+    hsl(336deg 100% 41%) 42%,
+    hsl(346deg 83% 51%) 50%,
+    hsl(3deg 95% 61%) 58%,
+    hsl(17deg 100% 59%) 67%,
+    hsl(30deg 100% 55%) 75%,
+    hsl(40deg 100% 50%) 83%,
+    hsl(48deg 100% 50%) 92%,
+    hsl(55deg 100% 50%) 100%
+  );
+}
+
+.login-container {
+  width: 50vw;
+  padding: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1000px #000;
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.loginbutton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+input {
+  background: #fff;
+  border-radius: 5px;
+  height: 30px;
+}
