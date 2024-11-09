@@ -32,7 +32,8 @@ SECRET_KEY = 'django-insecure-q4c*@=%x47s@6w%244#g@()#l6o+1nkp=1jeu-8_h2qhm$95_2
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "portfolio-backend-rdsn.onrender.com"
+    "portfolio-backend-rdsn.onrender.com",
+    "127.0.0.1"
 ]
 
 
