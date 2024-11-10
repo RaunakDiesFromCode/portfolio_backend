@@ -28,6 +28,7 @@ urlpatterns = [
     path('api/reviews/', ReviewList.as_view(),
          name='review-list'),  # Add this line for the API
     path('send-email/', send_email, name='send_email'),
+    path('mailbody/', mail_body, name='mail_body'),
 ]
 
 

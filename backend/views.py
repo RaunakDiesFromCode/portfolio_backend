@@ -145,3 +145,9 @@ def send_email(request):
     except Exception as e:
         print(f"Error: {e}")  # Log error to console
         return HttpResponse(f"An error occurred: {e}", status=500)
+
+
+def mail_body(request):
+    repoDatas = getRepos()
+    name = request.GET.get('name', 'Raunak')
+    return render(request, 'mailbody.html', {'repoDatas': repoDatas, 'name': name})
