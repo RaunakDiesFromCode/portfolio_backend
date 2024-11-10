@@ -67,10 +67,13 @@ body {
   margin: 10px 0px;
   border-radius: 5px;
   height: 30px;
+  box-shadow: none;
 }
 
 input {
   background: #fff;
   border-radius: 5px;
   height: 30px;
+  border: 2px solid #ccc;
+  box-shadow: none;
 }

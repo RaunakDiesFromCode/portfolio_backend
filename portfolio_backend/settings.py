@@ -33,7 +33,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "portfolio-backend-rdsn.onrender.com",
-    "127.0.0.1"
+    "127.0.0.1",
+    "http://127.0.0.1:8000"
 ]
 
 
@@ -67,7 +68,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://hifromraunak.vercel.app"
+    "https://hifromraunak.vercel.app",
+    "http://127.0.0.1:8000"
 ]
 
 ROOT_URLCONF = 'portfolio_backend.urls'
@@ -173,7 +175,7 @@ EMAIL_PORT: 587
 
 EMAIL_HOST_USER: "raunakmanna43@gmail.com"
 
-EMAIL_HOST_PASSWORD: "letsfucktautik"
+EMAIL_HOST_PASSWORD: os.getenv('EMAIL_PASSWORD')
 
 EMAIL_USE_TLS: True
 

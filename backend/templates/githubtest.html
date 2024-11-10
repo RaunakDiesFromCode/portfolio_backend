@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>GitHub Repositories Data</h1>
+
+    {% if data %}
+        <p>Here is the data fetched from the GitHub API:</p>
+        {{ data }}
+    {% else %}
+        <p>No data available. Please check your GitHub API configuration or try again later.</p>
+    {% endif %}
+</body>
+</html>
