@@ -94,8 +94,7 @@ def getRepos():
             randomData = random.sample(data, 3)
             return randomData
         else:
-            print(f"GitHub API Error: {
-                  response.status_code} - {response.text}")
+            print(f"GitHub API Error: { response.status_code} - {response.text}")
 
     except requests.exceptions.RequestException as e:
         print(f"Request Error: {e}")
