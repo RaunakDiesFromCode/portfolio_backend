@@ -62,8 +62,7 @@ def getReposData(request):
             randomData = random.sample(data, 3)
             return render(request, 'githubtest.html', {'data': randomData})
         else:
-            print(f"GitHub API Error: {
-                  response.status_code} - {response.text}")
+            print(f"GitHub API Error: {response.status_code} - {response.text}")
             return render(request, 'githubtest.html', {'data': None})
 
     except requests.exceptions.RequestException as e:
