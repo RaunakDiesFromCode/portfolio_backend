@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+  </head>
+  <body>
+    <div>
+      <h1>Hi {{name}}</h1>
+      <p>Yo yo Honey Singh</p>
+
+      {% if repoDatas %}
+      <p>Here is the data fetched from the GitHub API:</p>
+      {% for i in repoDatas %} {{ i.name }} {{i.html_url}} {{i.description}}
+      <br />
+      {% endfor %} {% else %}
+      <p>
+        No data available. Please check your GitHub API configuration or try
+        again later.
+      </p>
+      {% endif %}
+    </div>
+  </body>
+</html>

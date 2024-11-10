@@ -24,10 +24,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('thankyou/', thankyou, name='thankyou'),
-    path('githubtest/', getRepostData, name='githubtest'),
+    path('githubtest/', getReposData, name='githubtest'),
     path('api/reviews/', ReviewList.as_view(),
          name='review-list'),  # Add this line for the API
-    path('send-email/', send_simple_email, name='send_email'),
+    path('send-email/', send_email, name='send_email'),
 ]
 
 
