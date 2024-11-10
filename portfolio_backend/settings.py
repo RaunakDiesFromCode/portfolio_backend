@@ -168,15 +168,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Email settings
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-
-EMAIL_HOST: "smtp.gmail.com"
-
-EMAIL_PORT: 587
-
-EMAIL_HOST_USER: "raunakmanna43@gmail.com"
-
-EMAIL_HOST_PASSWORD: os.getenv('EMAIL_PASSWORD')
-
-EMAIL_USE_TLS: True
-
-EMAIL_USE_SSL: True
+EMAIL_HOST = "smtp.gmail.com"  # Correct the syntax error with `:`
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "thebestcoderraunak@gmail.com"
+EMAIL_HOST_PASSWORD = "krdh xeei azyx ezpi"  # Use App Password here
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False

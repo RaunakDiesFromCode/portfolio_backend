@@ -27,6 +27,7 @@ urlpatterns = [
     path('githubtest/', getRepostData, name='githubtest'),
     path('api/reviews/', ReviewList.as_view(),
          name='review-list'),  # Add this line for the API
+    path('send-email/', send_simple_email, name='send_email'),
 ]
 
 
